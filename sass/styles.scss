@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+label {
+  font-size: 1em;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+}
+.content {
+  max-width: 1200px;
+  padding: 10px;
+  margin: auto;
+}
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: grid;
+  // grid-template-columns: 100px 1fr;
+  grid-template-areas:
+    "header header"
+    "nav    nav"
+    "main   main"
+    "footer  footer";
+  grid-auto-columns: 200px 1fr;
+}
+
+header {
+  grid-area: header;
+  // background-color: red;
+}
+nav {
+  grid-area: nav;
+}
+.main-aside {
+  grid-area: main;
+}
+aside {
+  grid-area: aside;
+}
+
+footer {
+  grid-area: footer;
+}
+// Header
+.content--header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 173, 187);
+}
+.sesion {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  // background-color: greenyellow;
+}
+
+.title {
+  color: blueviolet;
+  align-self: flex-end;
+  // padding-bottom: 2px;
+  // background-color: aqua;
+}
+.sesion label {
+  display: block;
+  text-align: center;
+  margin-bottom: 4px;
+}
+.sesion .row {
+  margin-left: 10px;
+}
+.sesion .btn--sesion {
+  margin-left: 15px;
+  align-self: flex-end;
+  background-color: blueviolet;
+  color: #fff;
+}
+.sesion .btn--sesion:hover {
+  background-color: rgba(138, 43, 226, 0.8);
+}
+// Menu
+.lista--menu {
+  display: flex;
+  justify-content: space-around;
+  background-color: burlywood;
+}
+// Contenido principal
+
+.content--main-aside {
+  display: flex;
+  // flex-wrap: wrap;
+  justify-content: space-between;
+  // background-color: green;
+}
+aside {
+  width: 30%;
+  background-color: red;
+}
+main {
+  flex-grow: 1;
+  // background-color: tomato;
+}
+.subtitle {
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: crimson;
+  font-size: 1.3em;
+}
+.subtitle--main {
+  color: deeppink;
+  font-weight: 900;
+  font-size: 1.5em;
+}
+article {
+  margin-bottom: 15px;
+}
+.mascotas,
+.amor-propio {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.mascotas {
+  border-bottom: 2px solid royalblue;
+}
+.galeria img {
+  width: 100%;
+  height: 250px;
+  border-radius: 5px;
+}
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  // grid-template-rows: repeat(auto-fit, minmax(200px, 200px));
+  // grid-auto-rows: 2
+  gap: 10px;
+  margin-top: 15px;
+}
+.amor-propio {
+  border-bottom: 2px solid blueviolet;
+}
+.amor-propio article img,
+.comida-saludable img {
+  max-width: 30%;
+  margin: 15px auto;
+}
+
+.lista--saludable {
+  margin: 10px 0;
+  list-style-type: square;
+  list-style-position: inside;
+}
+.lista--saludable li {
+  margin: 5px 0;
+}

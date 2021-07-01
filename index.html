@@ -5,231 +5,335 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mis Mascotas</title>
-    <link href="https://file.myfontastic.com/JUwFAwWE8oUWFGdiTZSWaX/icons.css" rel="stylesheet">
+    <link
+      href="https://file.myfontastic.com/JUwFAwWE8oUWFGdiTZSWaX/icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
     <header class="header">
-      <div class="content">
-        <h1 class="title"><span class="icon-dog"></spa> JAMM<span></span></h1>
-        <input type="checkbox" name="menu-bar" id="menu-bar">
-        <label for="menu-bar" class="icon-menu"></label>
-        <nav class="menu">
-          <ul class="list">
-            <li class="lista_item"><a href="#" class="lista__item">Inicio</a></li>
-            <li class="lista_item"><a href="#" class="lista__item">Mascotas</a></li>
-            <li class="lista_item"><a href="#" class="lista__item">Blog</a></li>
-            <li class="lista_item"><a href="#" class="lista__item">Galer&iacute;</a></li>
-            <li class="lista_item"><a href="#" class="lista__item">Contacto</a></li>
-          </ul>
-        </nav>
+      <div class="content content--header">
+        <h1 class="title"><span class="icon-dog"></span> JAMM</h1>
+        <!-- <input type="checkbox" name="menu-bar" id="menu-bar" />
+        <label for="menu-bar" class="icon-menu"></label> -->
+        <div class="sesion">
+          <div class="row">
+            <label for="usuario">Usuario:</label>
+            <input type="text" />
+          </div>
+          <div class="row">
+            <label for="usuario">Contraseña:</label>
+            <input type="password" />
+          </div>
+          <input type="submit" value="Ingresar" class="btn btn--sesion" />
+          <div class="row"></div>
+        </div>
       </div>
     </header>
-    <section class="banner">
-      <div class="content">
-        <a href="#"></a>
-        <div class="logo">
-          <h2 class="subtitle">Mascotas y personas felices</h2>
-          <p class="paragraph descripcion">¿C&uacute;al es la mejor mascota para ud?</p>
-          <a href="#">Leer mas..</a>
-        </div>
-      </div>
-    </section>
+    <nav class="menu">
+      <ul class="lista content lista--menu">
+        <li class="lista_item">
+          <a href="#" class="lista__item">Inicio</a>
+        </li>
+        <li class="lista_item">
+          <a href="#" class="lista__item">Mascotas</a>
+        </li>
+        <li class="lista_item"><a href="#" class="lista__item">Blog</a></li>
+        <li class="lista_item">
+          <a href="#" class="lista__item">Galer&iacute;a</a>
+        </li>
+        <li class="lista_item">
+          <a href="#" class="lista__item">Contacto</a>
+        </li>
+      </ul>
+    </nav>
 
-    <main>
-      <div class="content">    
-      <section class="mascotas">
-        <article >
-          <h2 class="subtitle">Las mascotas</h2>
+    <div class="main-aside">
+      <div class="content content--main-aside">
+        <main>
+          <div class="content">
+            <section class="mascotas">
+              <article>
+                <h2 class="subtitle subtitle--main">
+                  <span class="icon-paw"></span> Las mascotas
+                </h2>
+                <p class="paragraph">
+                  Son animales domésticos, también son llamados animales de
+                  compañía y como su nombre lo indica son conservados por sus
+                  dueños para formar parte de la familia, disminuir la soledad y
+                  traer la alegría a sus hogares. Las mascotas alegran nuestros
+                  días, nos ofrecen compañía y algunas de ellas incluso pueden
+                  llegar a ser aliadas para nosotros en la ejecución de tareas
+                  diarias si se les da un entrenamiento correcto.
+                </p>
+              </article>
+
+              <article>
+                <h2 class="subtitle">
+                  ¿Por qu&eacute; son importantes las mascotas en el entorno
+                  familiar?
+                </h2>
+                <p class="paragraph">
+                  Desde que los lobos se acercaron a los humanos hace
+                  aproximadamente 15 mil a 20 mil años (según los restos
+                  encontrados en civilizaciones antiguas), se convirtieron en
+                  una parte importante de la vida humana, ahora resulta difícil
+                  no convivir con ellos, porque se integran fácilmente al
+                  entorno social y familiar. En el caso específico de los niños,
+                  el tener una mascota les permite adquirir un grado de
+                  responsabilidad, al asignarles tareas como cuidarla,
+                  alimentarla y brindarle cariño; porque son los perritos
+                  quienes devuelven el amor de una manera desinteresada, ellos
+                  aman por amar.
+                </p>
+              </article>
+              <article>
+                <h2 class="subtitle">
+                  ¿Por qu&eacute; es importante el cuidado y protección de las
+                  mascotas?
+                </h2>
+                <p class="paragraph">
+                  Las mascotas al ser miembros de la familia merecen nuestra
+                  atención y cuidado, en muchos casos son un hijo más, por ello,
+                  al comprometernos a cuidarlas debemos satisfacer sus
+                  necesidades médicas, de alimento y aseo adecuado, de lo
+                  contrario el animalito se enfermará ocasionando alteraciones
+                  en su comportamiento y lo que buscamos es que todos estén
+                  felices dentro del hogar
+                </p>
+              </article>
+
+              <section class="galeria-container">
+                <h2 class="subtitle">Galer&iacute; Sonia</h2>
+                <div class="galeria">
+                  <div class="galeria__item">
+                    <img
+                      src="assets/img/WhatsApp Image 2021-06-30 at 22.54.41 (1).jpeg"
+                      class="galeria_img"
+                    />
+                  </div>
+                  <div class="galeria__item">
+                    <img
+                      src="assets/img/WhatsApp Image 2021-06-30 at 22.54.41 (2).jpeg"
+                      class="galeria_img"
+                    />
+                  </div>
+                  <div class="galeria__item">
+                    <img
+                      src="assets/img/WhatsApp Image 2021-06-30 at 22.54.41.jpeg"
+                      class="galeria_img"
+                    />
+                  </div>
+                  <div class="galeria__item">
+                    <img
+                      src="assets/img/WhatsApp Image 2021-06-30 at 22.57.12 (1).jpeg"
+                      class="galeria_img"
+                    />
+                  </div>
+                  <div class="galeria__item">
+                    <img
+                      src="assets/img/WhatsApp Image 2021-06-30 at 22.54.42.jpeg"
+                      class="galeria_img"
+                    />
+                  </div>
+                  <div class="galeria__item">
+                    <img
+                      src="assets/img/WhatsApp Image 2021-06-30 at 22.57.14 (1).jpeg"
+                      class="galeria_img"
+                    />
+                  </div>
+                  <div class="galeria__item">
+                    <img
+                      src="assets/img/WhatsApp Image 2021-06-30 at 22.57.18 (1).jpeg"
+                      class="galeria_img"
+                    />
+                  </div>
+                  <div class="galeria__item">
+                    <img
+                      src="assets/img/WhatsApp Image 2021-06-30 at 22.57.17 (3).jpeg"
+                      class="galeria_img"
+                    />
+                  </div>
+                </div>
+              </section>
+            </section>
+            <section class="amor-propio">
+              <article>
+                <h2 class="subtitle subtitle--main">
+                  <span class="icon-heart"></span> Amor propio
+                </h2>
+                <p class="paragraph">
+                  El amor propio es un aspecto fundamental de la personalidad
+                  del ser humano en tanto que condiciona el funcionamiento
+                  personal a muchos niveles. Favorecer su construcción y
+                  consolidación supone una labor importante para tener en cuenta
+                  a nivel personal e incluso a nivel social para contribuir a la
+                  construcción de personalidades seguras y confiadas con altos
+                  niveles de altruismo y empatía que motivarán interacciones
+                  sociales saludables y mucho más solidarias.
+                </p>
+              </article>
+
+              <article>
+                <h2 class="subtitle">Importancia del amor propio</h2>
+                <p class="paragraph">
+                  Branden, N., autora del libro "Los seis pilares de la
+                  autoestima" considera que, si bien la base principal de la
+                  autoestima se crea durante la infancia y la adolescencia, las
+                  vivencias y el trabajo personal durante los años posteriores
+                  pueden reforzar o modificar nuestra visión de nosotros mismos.
+                </p>
+              </article>
+              <article>
+                <h2 class="subtitle">
+                  C&oacute;mo tener amor propio, dignidad y autoestima
+                </h2>
+                <p class="paragraph">
+                  Seg&uacute;n el Psiquiatra Enrique Rojas, existen 9 claves que
+                  determinan un buen nivel de amor propio o autoestima:
+                </p>
+                <img src="assets/img/amorpropio.jpg" alt="imagen-amorpropio" />
+              </article>
+            </section>
+            <section class="comida-saludable">
+              <article>
+                <h2 class="subtitle subtitle--main">
+                  <span class="icon-medkit"></span> Alimentación saludable
+                </h2>
+                <p class="paragraph">
+                  Una alimentación saludable consiste en ingerir una variedad de
+                  alimentos que te brinden los nutrientes que necesitas para
+                  mantenerte sana, sentirte bien y tener energía. Estos
+                  nutrientes incluyen las proteínas, los carbohidratos, las
+                  grasas, el agua, las vitaminas y los minerales.
+                </p>
+                <img
+                  src="assets/img/comida-saludable.jpg"
+                  alt="Comida-saludable"
+                />
+              </article>
+              <article>
+                <h2 class="subtitle">
+                  Cómo diseñar un plan de alimentación saludable
+                </h2>
+                <p class="paragraph">
+                  Para tener una dieta balanceada y saludable, debes consumir
+                  una variedad de alimentos ricos en nutrientes.
+                </p>
+                <ul class="lista lista--saludable">
+                  <li class="lista_item">
+                    llenar la mitad del plato con verduras y frutas
+                  </li>
+                  <li class="lista_item">
+                    llenar un cuarto del plato con granos, la mitad de ellos
+                    integrales
+                  </li>
+                  <li class="lista_item">
+                    llenar un cuarto del plato con proteínas magras, sin
+                    olvidarse de variar las fuentes de proteínas y de consumir
+                    pescado dos veces por semana
+                  </li>
+                  <li class="lista_item">
+                    reducir el consumo de alimentos con mucha azúcar, sal y
+                    grasa agregada
+                  </li>
+                </ul>
+                <p class="paragraph">
+                  Lo mejor es elegir los alimentos que tengan más nutrientes de
+                  cada grupo de alimentos cada día, es decir, los que están
+                  repletos de vitaminas, minerales, fibra y otros nutrientes, y
+                  que tengan pocos carbohidratos refinados, como azúcar y harina
+                  blanca. Elige alimentos como verduras, frutas, granos
+                  integrales, y carne y pescado magros.
+                </p>
+                <img
+                  src="assets/img/plato-saludable.jpg"
+                  alt="Plato saludable"
+                />
+              </article>
+            </section>
+          </div>
+        </main>
+        <aside>
+          <section class="bibliografia">
+            <img
+              src="assets/img/WhatsApp Image 2021-06-30 at 22.57.18.jpeg"
+              alt="persona"
+            />
+
             <p class="paragraph">
-            Son animales domésticos, también son llamados animales de compañía y 
-            como su nombre lo indica son conservados por sus dueños para formar parte 
-            de la familia, disminuir la soledad y traer la alegría a sus hogares. 
-            Las mascotas alegran nuestros días, nos ofrecen compañía y algunas de 
-            ellas incluso pueden llegar a ser aliadas para nosotros en la ejecución 
-            de tareas diarias si se les da un entrenamiento correcto.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
+              facilis alias cum qui blanditiis cumque ad voluptatibus dolor
+              necessitatibus quae? Laborum illo recusandae veniam veritatis
+              inventore sint voluptates. Impedit, doloribus.
             </p>
-        </article>  
+          </section>
+          <section class="publicidad">
+            <article>
+              <h3>Venta de ropa para perritos</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Quaerat error consequuntur voluptas necessitatibus delectus qui
+                quam, ipsam, magnam tempora, perferendis officia accusamus illum
+                dolorum ut expedita a laudantium! Minima, cumque!
+              </p>
+              <a href="#">Ir a la pagina</a>
+            </article>
+            <article>
+              <h3>Venta de ropa para perritos</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Quaerat error consequuntur voluptas necessitatibus delectus qui
+                quam, ipsam, magnam tempora, perferendis officia accusamus illum
+                dolorum ut expedita a laudantium! Minima, cumque!
+              </p>
+              <a href="#">Ir a la pagina</a>
+            </article>
+            <article>
+              <h3>Venta de ropa para perritos</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Quaerat error consequuntur voluptas necessitatibus delectus qui
+                quam, ipsam, magnam tempora, perferendis officia accusamus illum
+                dolorum ut expedita a laudantium! Minima, cumque!
+              </p>
+              <a href="#">Ir a la pagina</a>
+            </article>
+          </section>
+          <section class="contacto">
+            <form action="#">
+              <div class="row">
+                <label for="email">Email</label>
+                <input type="email" id="email" />
+              </div>
 
-        <article>
-          <h2 class="subtitle">¿Por qu&eacute; son importantes las mascotas en el entorno familiar?</h2>
-          <p class="paragraph">
-            Desde que los lobos se acercaron a los humanos hace aproximadamente 15 mil a 
-            20 mil años (según los restos encontrados en civilizaciones antiguas), 
-            se convirtieron en una parte importante de la vida humana, ahora resulta 
-            difícil no convivir con ellos, porque se integran fácilmente al entorno social
-             y familiar. En el caso específico de los niños, el tener una mascota les permite 
-             adquirir un grado de responsabilidad, al asignarles tareas como cuidarla, alimentarla 
-             y brindarle cariño; porque son los perritos quienes devuelven el amor de una manera 
-             desinteresada, ellos aman por amar.
-          </p>
-
-        </article>
-        <article>
-          <h2 class="subtitle">¿Por qu&eacute; es importante el cuidado y protección de las mascotas?</h2>
-          <p class="paragraph">
-            Las mascotas al ser miembros de la familia merecen nuestra atención y cuidado, 
-            en muchos casos son un hijo más, por ello, al comprometernos a cuidarlas
-             debemos satisfacer sus necesidades médicas, de alimento y aseo adecuado, de
-              lo contrario el animalito se enfermará ocasionando alteraciones en su 
-              comportamiento y lo que buscamos es que todos estén felices dentro del hogar
-          </p>
-        </article>
-
-       <section class="galeria-container">
-         <h2 class="subtitle">Galer&iacute; Sonia</h2>
-         <div class="galeria">
-          <div class="galeria_item"><img src="assets/img/WhatsApp Image 2021-06-30 at 22.54.41 (1).jpeg" class="galeria_img"></img
-            ></div>
-          <div class="galeria_item"><img src="assets/img/WhatsApp Image 2021-06-30 at 22.54.41 (2).jpeg" class="galeria_img"></img
-            ></div>
-          <div class="galeria_item"><img src="assets/img/WhatsApp Image 2021-06-30 at 22.54.41.jpeg" class="galeria_img"></img
-            ></div>
-          <div class="galeria_item"><img src="assets/img/WhatsApp Image 2021-06-30 at 22.57.12 (1).jpeg" class="galeria_img"></img
-            ></div>
-          <div class="galeria_item"><img src="assets/img/WhatsApp Image 2021-06-30 at 22.54.42.jpeg" class="galeria_img"></img
-            ></div>
-          <div class="galeria_item"><img src="assets/img/WhatsApp Image 2021-06-30 at 22.57.14 (1).jpeg" class="galeria_img"></img
-            ></div>
-        </div>
-       </section>
-      </section>
-      <section class="amor-propio">
-        <article>
-          <h2 class="subtitle">Amor propio</h2>
-          <p class="paragraph">
-            El amor propio es un aspecto fundamental de la personalidad del ser humano en 
-            tanto que condiciona el funcionamiento personal a muchos niveles. Favorecer 
-            su construcción y consolidación supone una labor importante para tener en 
-            cuenta a nivel personal e incluso a nivel social para contribuir a la 
-            construcción de personalidades seguras y confiadas con altos niveles de 
-            altruismo y empatía que motivarán interacciones sociales saludables y mucho más solidarias.
-          </p>
-        </article>
-
-        <article>
-          <h2 class="subtitle">
-            Importancia del amor propio
-          </h2>
-          <p class="paragraph">
-          Branden, N., autora del libro "Los seis pilares de la autoestima" considera que, 
-          si bien la base principal de la autoestima se crea durante la infancia y 
-          la adolescencia, las vivencias y el trabajo personal durante los años posteriores
-           pueden reforzar o modificar nuestra visión de nosotros mismos.
-          </p>
-
-        </article>
-        <article>
-          <h2 class="subtitle">C&oacute;mo tener amor propio, dignidad y autoestima</h2>
-          <p class="paragraph">
-            Seg&uacute;n el Psiquiatra Enrique Rojas, existen 9 claves que determinan un buen 
-            nivel de amor propio o autoestima:
-          </p>
-          <img src="assets/img/amorpropio.jpg" alt="imagen-amorpropio">
-        </article>
-
-      </section>
-      <section class="comida-saludable">
-        <article>
-          <h2 class="subtitle">Alimentación saludable</h2>
-          <p class="paragraph">
-            Una alimentación saludable consiste en ingerir una variedad de alimentos que te 
-            brinden los nutrientes que necesitas para mantenerte sana, sentirte bien y tener energía. 
-            Estos nutrientes incluyen las proteínas, los carbohidratos, las grasas, el agua, las
-             vitaminas y los minerales.
-          </p>
-          <img src="assets/img/comida-saludable.jpg" alt="Comida-saludable">
-        </article>
-        <article>
-          <h2 class="subtitle">Cómo diseñar un plan de alimentación saludable</h2>
-          <p class="paragraph">
-           Para tener una dieta balanceada y saludable, debes consumir una variedad de alimentos
-            ricos en nutrientes.
-          </p>
-          <ul class="lista">
-            <li class="lista_item">llenar la mitad del plato con verduras y frutas</li>
-            <li class="lista_item">llenar un cuarto del plato con granos, la mitad de ellos integrales</li>
-            <li class="lista_item">llenar un cuarto del plato con proteínas magras, sin olvidarse de variar las fuentes de proteínas y de consumir pescado dos veces por semana</li>
-            <li class="lista_item">reducir el consumo de alimentos con mucha azúcar, sal y grasa agregada</li>
-          </ul>
-         <p class="paragraph">
-           Lo mejor es elegir los alimentos que tengan más nutrientes de cada grupo de alimentos cada día,
-            es decir, los que están repletos de vitaminas, minerales, fibra y otros nutrientes, y que 
-            tengan pocos carbohidratos refinados, como azúcar y harina blanca. Elige alimentos como 
-            verduras, frutas, granos integrales, y carne y pescado magros.
-         </p>
-         <img src="assets/img/plato-saludable.jpg" alt="Plato saludable">
-        </article>
-
-      </section>
+              <div class="row">
+                <label for="mensaje">Mensaje</label>
+                <textarea name="" id="mensaje" cols="30" rows="10"> </textarea>
+              </div>
+              <input type="submit" value="Enviar" />
+            </form>
+          </section>
+        </aside>
+      </div>
     </div>
-    </main>
-    <aside>
-      <section class="bibliografia">
-        <img src="assets/img/WhatsApp Image 2021-06-30 at 22.57.18.jpeg" alt="persona">
-
-        <p class="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-          Facere facilis alias cum qui blanditiis cumque ad voluptatibus dolor necessitatibus 
-          quae? Laborum illo recusandae veniam veritatis inventore sint voluptates. Impedit,
-           doloribus.
-        </p>
-
-      </section>
-      <section class="publicidad">
-
-        <article>
-          <h3>Venta de ropa para perritos</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat error 
-            consequuntur voluptas necessitatibus delectus qui quam, ipsam, magnam tempora,
-             perferendis officia accusamus illum dolorum ut expedita a laudantium! Minima, 
-             cumque!
-          </p>
-          <a href="#">Ir a la pagina</a>
-        </article>
-        <article>
-          <h3>Venta de ropa para perritos</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat error 
-            consequuntur voluptas necessitatibus delectus qui quam, ipsam, magnam tempora,
-             perferendis officia accusamus illum dolorum ut expedita a laudantium! Minima, 
-             cumque!
-          </p>
-          <a href="#">Ir a la pagina</a>
-        </article>
-        <article>
-          <h3>Venta de ropa para perritos</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat error 
-            consequuntur voluptas necessitatibus delectus qui quam, ipsam, magnam tempora,
-             perferendis officia accusamus illum dolorum ut expedita a laudantium! Minima, 
-             cumque!
-          </p>
-          <a href="#">Ir a la pagina</a>
-        </article>
-      </section>
-      <section class="contacto">
-
-        <form action="#">
-          <div class="row">
-            <label for="email">Email</label>
-            <input type="email" id="email">
-          </div>
-          
-          <div class="row">
-            <label for="mensaje">Mensaje</label>
-            <textarea name="" id="mensaje" cols="30" rows="10">
-            </textarea>
-          </div>
-        <input type="submit" value="Enviar">
-        </form>
-        
-      </section>
-    </aside>
     <footer>
       <div class="content">
         <section class="redes">
           <ul class="lista lista">
-            <li class="lista_item"><a href="" class="icon-facebook">Facebook</a></li>
-            <li class="lista_item"><a href="" class="icon-instagram">Instagram</a></li>
-            <li class="lista_item"><a href="" class="icon-linkedin">Linkedin</a></li>
-            <li class="lista_item"><a href="" class="icon-youtube">Youtube</a></li>
+            <li class="lista_item">
+              <a href="" class="icon-facebook">Facebook</a>
+            </li>
+            <li class="lista_item">
+              <a href="" class="icon-instagram">Instagram</a>
+            </li>
+            <li class="lista_item">
+              <a href="" class="icon-linkedin">Linkedin</a>
+            </li>
+            <li class="lista_item">
+              <a href="" class="icon-youtube">Youtube</a>
+            </li>
           </ul>
         </section>
         <section class="autor">
