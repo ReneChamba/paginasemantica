@@ -1,3 +1,5 @@
+$colorPrimario: rgb(255, 173, 187);
+$colorSecundario: blueviolet;
 * {
   margin: 0;
   padding: 0;
@@ -71,7 +73,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(255, 173, 187);
+  background-color: $colorPrimario;
 }
 .sesion {
   display: flex;
@@ -81,7 +83,7 @@ footer {
 }
 
 .title {
-  color: blueviolet;
+  color: $colorSecundario;
   align-self: flex-end;
   // padding-bottom: 2px;
   // background-color: aqua;
@@ -97,7 +99,7 @@ footer {
 .sesion .btn--sesion {
   margin-left: 15px;
   align-self: flex-end;
-  background-color: blueviolet;
+  background-color: $colorSecundario;
   color: #fff;
 }
 .sesion .btn--sesion:hover {
@@ -176,4 +178,52 @@ article {
 }
 .lista--saludable li {
   margin: 5px 0;
+}
+
+// Footer
+
+footer {
+  background-color: $colorPrimario;
+}
+.content--footer {
+  text-align: center;
+}
+.autor {
+  color: deeppink;
+  font-weight: 600;
+}
+.redes {
+  margin-top: 10px;
+  // width: 100%;
+  // background-color: red;
+}
+.lista--enlaces .lista__item {
+  margin: 10px 0;
+}
+
+.lista--enlaces li {
+  color: deeppink;
+}
+.lista--enlaces a {
+  margin-left: 10px;
+  color: $colorSecundario;
+}
+
+@media screen and (min-width: 768px) {
+  .content--footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .lista--enlaces {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .lista--enlaces .lista__item {
+    margin-left: 10px;
+  }
+  .lista--enlaces .lista__item:last-child {
+    margin-right: 10px;
+  }
 }
